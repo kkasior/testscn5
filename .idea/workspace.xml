@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="545a4412-0574-4665-b4e6-b008d3f0e67c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/CalculatorStepsDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/CalculatorTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/devto/DevToStepsDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/devto/DevToTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/bdd.tests/calculator.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/bdd.tests/devto/podcast.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/pageObjects/DevToMainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/pageObjects/PodcastListPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/pageObjects/SinglePodcastPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FirstTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FirstTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FirstTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FirstTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bdd/tests/devto/DevToStepsDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/devto/DevToStepsDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/bdd/tests/devto/DevToStepsDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bdd/tests/devto/DevToStepsDefinitions.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +46,7 @@
       <recent name="C:\dev\testscn5bddandselenium\src\test\resources\bdd.tests\devto" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="bdd.tests.pageObjects" />
       <recent name="bdd.tests" />
     </key>
   </component>
@@ -149,22 +145,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1865" height="148" key="GridCell.Tab.0.bottom" timestamp="1598185226184">
+    <state width="1865" height="148" key="GridCell.Tab.0.bottom" timestamp="1598191004534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="148" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598185226184" />
-    <state width="1865" height="148" key="GridCell.Tab.0.center" timestamp="1598185226184">
+    <state width="1865" height="148" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598191004534" />
+    <state width="1865" height="148" key="GridCell.Tab.0.center" timestamp="1598191004534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="148" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598185226184" />
-    <state width="1865" height="148" key="GridCell.Tab.0.left" timestamp="1598185226184">
+    <state width="1865" height="148" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598191004534" />
+    <state width="1865" height="148" key="GridCell.Tab.0.left" timestamp="1598191004534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="148" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598185226184" />
-    <state width="1865" height="148" key="GridCell.Tab.0.right" timestamp="1598185226184">
+    <state width="1865" height="148" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598191004534" />
+    <state width="1865" height="148" key="GridCell.Tab.0.right" timestamp="1598191004534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="148" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598185226184" />
+    <state width="1865" height="148" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598191004534" />
     <state width="1865" height="331" key="GridCell.Tab.1.bottom" timestamp="1598167838337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

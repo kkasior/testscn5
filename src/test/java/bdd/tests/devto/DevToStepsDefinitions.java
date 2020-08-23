@@ -1,5 +1,8 @@
 package bdd.tests.devto;
 
+import bdd.tests.pageObjects.DevToMainPage;
+import bdd.tests.pageObjects.PodcastListPage;
+import bdd.tests.pageObjects.SinglePodcastPage;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -18,8 +21,14 @@ import static org.junit.Assert.assertTrue;
 public class DevToStepsDefinitions {
 
     WebDriver driver;
-    String devToUrl = "https://dev.to/";
+
     String firstPodcastTextValue;
+    String podcastTitle;
+
+    DevToMainPage devToMainPage;
+    PodcastListPage podcastListPage;
+    SinglePodcastPage singlePodcastPage;
+
     @Before
     public void setup(){
         System.setProperty("webdriver.chrome.driver","C:\\chromedriver\\chromedriver.exe");
@@ -29,32 +38,24 @@ public class DevToStepsDefinitions {
     }
     @Given("I am on the main dev.to page")
     public void i_am_on_the_main_dev_to_page() {
-        driver.get(devToUrl);
+        devToMainPage = new DevToMainPage(driver);
     }
     @When("I click the podcasts button")
     public void i_click_the_podcasts_button() {
-        WebElement podcastsButton = driver.findElement(By.xpath("//a[@href='/pod']"));
-        podcastsButton.click();
+        podcastListPage = devToMainPage.selectPodcasts();
     }
     @When("I select the first podcast from list")
     public void i_select_the_first_podcast_from_list() {
-        WebElement firstPodcast = driver.findElement(By.cssSelector(".content > h3:first-child"));
-        firstPodcastTextValue = firstPodcast.getText();
-        firstPodcastTextValue = firstPodcastTextValue.substring(7);
-        firstPodcast.click();
+        podcastTitle = podcastListPage.getPodcastTitleFromList(podcastListPage.firstPodcast);
+        singlePodcastPage = podcastListPage.selectPodcast(podcastListPage.firstPodcast);
     }
     @When("I clik on the play button")
     public void i_clik_on_the_play_button() {
-        WebElement recordButton = driver.findElement(By.className("record-wrapper"));
-        recordButton.click();
+        singlePodcastPage.clickThePlayButton();
     }
     @Then("I should be able to listen to the podcast")
     public void i_should_be_able_to_listen_to_the_podcast() {
-        WebElement recordButton = driver.findElement(By.className("record-wrapper"));
-        WebDriverWait wait=new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.className("status-message"))));
-        String classAttributeOfRecordButton = recordButton.getAttribute("class");
-        assertTrue("Podcast isn't played",classAttributeOfRecordButton.contains("playing"));
-
+        boolean isPodcastPlaying = singlePodcastPage.isRecordButtonOn();
+        assertTrue("Podcast isn't played",isPodcastPlaying);
     }
 }
