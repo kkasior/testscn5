@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="545a4412-0574-4665-b4e6-b008d3f0e67c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/CalculatorStepsDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/CalculatorTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/devto/DevToStepsDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/tests/devto/DevToTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/bdd.tests/calculator.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/bdd.tests/devto/podcast.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FirstTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FirstTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/FirstTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FirstTests.class" afterDir="false" />
     </list>
@@ -22,7 +30,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gRcS86gyeiFf5iBOcfNx0ebWsH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,22 +46,50 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
-  <component name="RunManager" selected="JUnit.FirstTests.goToWeekAndSelectTheFirstBlog">
-    <configuration name="FirstTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\testscn5bddandselenium\src\test\resources\bdd.tests\devto" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="bdd.tests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DevToTests">
+    <configuration name="CalculatorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testscn5bddandselenium" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bdd.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bdd.tests" />
+      <option name="MAIN_CLASS_NAME" value="bdd.tests.CalculatorTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTests.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DevToTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testscn5bddandselenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bdd.tests.devto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bdd.tests.devto" />
+      <option name="MAIN_CLASS_NAME" value="bdd.tests.devto.DevToTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testscn5bddandselenium" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTests" />
-      <option name="METHOD_NAME" value="firstTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -78,10 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FirstTests.goToWeekAndSelectTheFirstBlog" />
+        <item itemvalue="JUnit.DevToTests" />
         <item itemvalue="JUnit.FirstTests.goToPodcastsAndOpenFirstPodcast" />
+        <item itemvalue="JUnit.CalculatorTests" />
+        <item itemvalue="JUnit.FirstTests.goToWeekAndSelectTheFirstBlog" />
         <item itemvalue="JUnit.FirstTests" />
-        <item itemvalue="JUnit.FirstTests.firstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -110,22 +149,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1865" height="267" key="GridCell.Tab.0.bottom" timestamp="1598170578160">
+    <state width="1865" height="148" key="GridCell.Tab.0.bottom" timestamp="1598185226184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598170578160" />
-    <state width="1865" height="267" key="GridCell.Tab.0.center" timestamp="1598170578160">
+    <state width="1865" height="148" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598185226184" />
+    <state width="1865" height="148" key="GridCell.Tab.0.center" timestamp="1598185226184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598170578160" />
-    <state width="1865" height="267" key="GridCell.Tab.0.left" timestamp="1598170578160">
+    <state width="1865" height="148" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598185226184" />
+    <state width="1865" height="148" key="GridCell.Tab.0.left" timestamp="1598185226184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598170578160" />
-    <state width="1865" height="267" key="GridCell.Tab.0.right" timestamp="1598170578160">
+    <state width="1865" height="148" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598185226184" />
+    <state width="1865" height="148" key="GridCell.Tab.0.right" timestamp="1598185226184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598170578160" />
+    <state width="1865" height="148" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598185226184" />
     <state width="1865" height="331" key="GridCell.Tab.1.bottom" timestamp="1598167838337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -154,9 +193,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="316" y="447" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1598081259828" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1598170738882">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1598170989353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598170738882" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598170989353" />
   </component>
 </project>

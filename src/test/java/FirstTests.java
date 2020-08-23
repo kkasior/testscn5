@@ -44,12 +44,10 @@ public class FirstTests {
         WebElement firstPodcast = driver.findElement(By.className("content"));
         //firstPodcast.click();
         WebElement firstPodcastText = driver.findElement(By.cssSelector(".content > h3:first-child"));
-        highLightElement(driver,firstPodcastText);
         String firstPodcastTextValue = firstPodcastText.getText();
         firstPodcastTextValue = firstPodcastTextValue.substring(7);
         firstPodcast.click();
         WebElement podcastTitle = driver.findElement(By.cssSelector(".title > h1:nth-child(2)"));
-        highLightElement(driver,podcastTitle);
         String podcastTitleText = podcastTitle.getText();
 
         assertEquals("script entered wrong podcast",firstPodcastTextValue,podcastTitleText);
@@ -60,7 +58,7 @@ public class FirstTests {
         WebDriverWait wait=new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.className("status-message"))));
 
-        String classAttributeOfRecordButton = recordButton.getAttribute("class");
+            String classAttributeOfRecordButton = recordButton.getAttribute("class");
 
         assertTrue("Podcast isn't played",classAttributeOfRecordButton.contains("playing"));
     }
