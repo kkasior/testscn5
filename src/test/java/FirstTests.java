@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
         import static org.junit.Assert.assertEquals;
@@ -17,6 +18,7 @@ public class FirstTests {
 
     WebDriver driver;
     String devToUrl = "https://dev.to/";
+
 
     public void highLightElement(WebDriver driver, WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -61,5 +63,24 @@ public class FirstTests {
         String classAttributeOfRecordButton = recordButton.getAttribute("class");
 
         assertTrue("Podcast isn't played",classAttributeOfRecordButton.contains("playing"));
+    }
+    @Test
+    public void goToWeekAndSelectTheFirstBlog(){
+        List<WebElement> postsTimeCategoryItems = driver.findElements(By.className("crayons-tabs__item"));
+        WebElement weekButton = postsTimeCategoryItems.get(1);
+        highLightElement(driver,weekButton);
+        weekButton.click();
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.urlToBe("https://dev.to/top/week"));
+
+        WebElement firstPostTitle = driver.findElement(By.cssSelector(".crayons-story__title > a:first-child"));
+        highLightElement(driver,firstPostTitle);
+        String firstPostTitleText = firstPostTitle.getText();
+        firstPostTitle.click();
+        WebElement postTitle = driver.findElement(By.cssSelector(".crayons-article__header__meta > h1:first-child"));
+        highLightElement(driver,postTitle);
+        String postTitleText = postTitle.getText();
+
+        assertEquals("post titles mismatch",firstPostTitleText,postTitleText);
     }
 }
